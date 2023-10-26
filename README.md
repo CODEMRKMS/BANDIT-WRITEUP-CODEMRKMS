@@ -145,4 +145,4 @@ cat data.txt
 ```bash
 cat data.txt | base64 -d
 ```
-bandit10 - IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+bandit10 - zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
