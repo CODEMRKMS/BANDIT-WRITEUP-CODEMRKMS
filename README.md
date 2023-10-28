@@ -238,7 +238,7 @@ ls
 ls -al
 chmod 600 rsafile
 ```
-### Flag
+**Flag**
 -----BEGIN RSA PRIVATE KEY-----
 
 MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
@@ -269,30 +269,30 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 
 -----END RSA PRIVATE KEY-----
 
-### Approach used
+**Approach used**
 I used namp to map the given ranges then again i used nmap but this time with sv to make it faster now i got two ports 31518 and 31790. i tried with first one but it kept on giving same password but then i tried with next which finally gave my flag
-# Level 17 → Level 18
-### Commands used
+##Level 17 → Level 18
+***Commands used***
 ```
 ssh -i rsafile bandit17@localhost -p 2220
 ls
 diff passwords.old passwords.new
 ```
-### Flag
+**flag**
 >hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
-### Approach used
+**Approach used**
 use diff to which line is differnt in those two files
 # Level 18 → Level 19
-### Commands used
+***Commands used***
 ```
 ssh bandit18@bandit.labs.overthewire.org -p 2220 "ls"
 ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"
 ```
-### Flag
+**Flag**
 >awhqfNnAbc1naukrpqDYcF95h7HoMTrC
 
-# Level 19 → Level 20
-### Commands used
+## Level 19 → Level 20
+***Commands used***
 ```
 ssh bandit19@bandit.labs.overthewire.org -p 2220 
 ls -la
@@ -301,14 +301,14 @@ ls -la
 ./bandit20-do ls /etc/bandit_pass
 ./bandit20-do cat /etc/bandit_pass/bandit20
 ```
-### Flag
+**Flag**
 >VxCazJaVykI6W36BkBU0mJTCM8rR95XT
-### Approach used
+**Approach used**
 when we list file we observe one file is red but then we see that it can be acessed with only bandit 20 user so we use command to shift to bandit 20 user and then easily acess the next flag.
 
 
-# Level 20 → Level 21
-### Commands used
+## Level 20 → Level 21
+***Commands used***
 ```
 {In one tab}                                                          |     {In another tab}
 ssh bandit20@bandit.labs.overthewire.org -p 2220                      |    ssh bandit20@bandit.labs.overthewire.org -p 2220  
@@ -317,9 +317,9 @@ ls                                                                    |    nc -l
 ./suconnect 3333                                                      |                                                                   
 
 ```
-### Flag
+**Flag**
 >NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
-### Approach used
+**Approach used**
 in one tab u succonect and it in other tab you type lp to listen
 
 # Level 21 → Level 22
