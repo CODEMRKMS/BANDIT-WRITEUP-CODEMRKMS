@@ -155,6 +155,7 @@ cat data.txt
 ```
 ➼ Used tr to replace all characters in set A-Z and a-z with 
     all corresponding characters in set N-Z,A-M and n-z,a-m
+    well this is one way but i initially used rot13 cipher to get the answer
 
 ```bash
 cat data.txt | tr "A-Za-z" "N-ZA-Mn-za-m"
