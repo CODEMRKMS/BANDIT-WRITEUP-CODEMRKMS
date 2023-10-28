@@ -220,4 +220,106 @@ bandit15 - jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 ```bash
 openssl s_client -connect localhost:30001
 ```
-bandit16 - JQttfApK4SeyHwDlI9SXGR50qclOAil1
+bandit16 - JQttfApK4SeyHwDlI9SXGR50qclOAil1# Level 16 → Level 17
+
+## bandit 16  → bandit 17 
+### Commands used
+```
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+nmap localhost -p 31000-32000
+nmap localhost -p 31046,31518,31691,31790,31960 -sV -T4
+openssl s_client -connect localhost:31518
+openssl s_client -connect localhost:31790
+cd /tmp
+mkdir useless2
+cd useless2
+nano rsafile {do ctrl+S to save the file}
+ls
+ls -al
+chmod 600 rsafile
+```
+### Flag
+-----BEGIN RSA PRIVATE KEY-----
+
+MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
+imZzeyGC0gtZPGujUSxiJSWI/oTqexh+cAMTSMlOJf7+BrJObArnxd9Y7YT2bRPQ
+Ja6Lzb558YW3FZl87ORiO+rW4LCDCNd2lUvLE/GL2GWyuKN0K5iCd5TbtJzEkQTu
+DSt2mcNn4rhAL+JFr56o4T6z8WWAW18BR6yGrMq7Q/kALHYW3OekePQAzL0VUYbW
+JGTi65CxbCnzc/w4+mqQyvmzpWtMAzJTzAzQxNbkR2MBGySxDLrjg0LWN6sK7wNX
+x0YVztz/zbIkPjfkU1jHS+9EbVNj+D1XFOJuaQIDAQABAoIBABagpxpM1aoLWfvD
+KHcj10nqcoBc4oE11aFYQwik7xfW+24pRNuDE6SFthOar69jp5RlLwD1NhPx3iBl
+J9nOM8OJ0VToum43UOS8YxF8WwhXriYGnc1sskbwpXOUDc9uX4+UESzH22P29ovd
+d8WErY0gPxun8pbJLmxkAtWNhpMvfe0050vk9TL5wqbu9AlbssgTcCXkMQnPw9nC
+YNN6DDP2lbcBrvgT9YCNL6C+ZKufD52yOQ9qOkwFTEQpjtF4uNtJom+asvlpmS8A
+vLY9r60wYSvmZhNqBUrj7lyCtXMIu1kkd4w7F77k+DjHoAXyxcUp1DGL51sOmama
++TOWWgECgYEA8JtPxP0GRJ+IQkX262jM3dEIkza8ky5moIwUqYdsx0NxHgRRhORT
+8c8hAuRBb2G82so8vUHk/fur85OEfc9TncnCY2crpoqsghifKLxrLgtT+qDpfZnx
+SatLdt8GfQ85yA7hnWWJ2MxF3NaeSDm75Lsm+tBbAiyc9P2jGRNtMSkCgYEAypHd
+HCctNi/FwjulhttFx/rHYKhLidZDFYeiE/v45bN4yFm8x7R/b0iE7KaszX+Exdvt
+SghaTdcG0Knyw1bpJVyusavPzpaJMjdJ6tcFhVAbAjm7enCIvGCSx+X3l5SiWg0A
+R57hJglezIiVjv3aGwHwvlZvtszK6zV6oXFAu0ECgYAbjo46T4hyP5tJi93V5HDi
+Ttiek7xRVxUl+iU7rWkGAXFpMLFteQEsRr7PJ/lemmEY5eTDAFMLy9FL2m9oQWCg
+R8VdwSk8r9FGLS+9aKcV5PI/WEKlwgXinB3OhYimtiG2Cg5JCqIZFHxD6MjEGOiu
+L8ktHMPvodBwNsSBULpG0QKBgBAplTfC1HOnWiMGOU3KPwYWt0O6CdTkmJOmL8Ni
+blh9elyZ9FsGxsgtRBXRsqXuz7wtsQAgLHxbdLq/ZJQ7YfzOKU4ZxEnabvXnvWkU
+YOdjHdSOoKvDQNWu6ucyLRAWFuISeXw9a/9p7ftpxm0TSgyvmfLF2MIAEwyzRqaM
+77pBAoGAMmjmIJdjp+Ez8duyn3ieo36yrttF5NSsJLAbxFpdlc1gvtGCWW+9Cq0b
+dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
+vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
+
+-----END RSA PRIVATE KEY-----
+
+### Approach used
+I used namp to map the given ranges then again i used nmap but this time with sv to make it faster now i got two ports 31518 and 31790. i tried with first one but it kept on giving same password but then i tried with next which finally gave my flag
+# Level 17 → Level 18
+### Commands used
+```
+ssh -i rsafile bandit17@localhost -p 2220
+ls
+diff passwords.old passwords.new
+```
+### Flag
+>hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+### Approach used
+use diff to which line is differnt in those two files
+# Level 18 → Level 19
+### Commands used
+```
+ssh bandit18@bandit.labs.overthewire.org -p 2220 "ls"
+ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"
+```
+### Flag
+>awhqfNnAbc1naukrpqDYcF95h7HoMTrC
+
+# Level 19 → Level 20
+### Commands used
+```
+ssh bandit19@bandit.labs.overthewire.org -p 2220 
+ls -la
+./bandit20-do
+./bandit20-do id
+./bandit20-do ls /etc/bandit_pass
+./bandit20-do cat /etc/bandit_pass/bandit20
+```
+### Flag
+>VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+### Approach used
+when we list file we observe one file is red but then we see that it can be acessed with only bandit 20 user so we use command to shift to bandit 20 user and then easily acess the next flag.
+
+
+# Level 20 → Level 21
+### Commands used
+```
+{In one tab}                                                          |     {In another tab}
+ssh bandit20@bandit.labs.overthewire.org -p 2220                      |    ssh bandit20@bandit.labs.overthewire.org -p 2220  
+ls                                                                    |    nc -lp 3333
+./suconnect                                                           |    VxCazJaVykI6W36BkBU0mJTCM8rR95XT (type the password when it shows connection received on localhost)
+./suconnect 3333                                                      |                                                                   
+
+```
+### Flag
+>NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+### Approach used
+in one tab u succonect and it in other tab you type lp to listen
+
+# Level 21 → Level 22
