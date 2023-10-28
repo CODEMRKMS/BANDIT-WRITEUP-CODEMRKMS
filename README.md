@@ -83,7 +83,7 @@ bandit5 - P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
 **approach** ➼ Used cd to navigate to the top of tree(root folder)
 
-[*] Used find with size,user,group options and removed all err 
+➼ Used find with size,user,group options and removed all err 
     statements using 2>/dev/null
 
 ```bash
@@ -194,7 +194,7 @@ bandit12 - wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 ```bash
 chmod 600 id_rsa
 ```
-➼ Singed in using the private key for user bandit14
+➼ Signed in using the private key for user bandit14
 
 ```bash
 ssh -i id_rsa bandit14@bandit.labs.overthewire.org -p 2220
