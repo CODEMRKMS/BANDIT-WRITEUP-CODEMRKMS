@@ -26,7 +26,7 @@ Flag for level 0-1 is
 ```bash
 cat readme
 ```
-bandit1 - CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+bandit1 - 9rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 
 ## bandit2 → bandit3
 
@@ -35,7 +35,7 @@ bandit1 - CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 ```bash
 cat ./-
 ```
-bandit2 - UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+bandit2 - aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 
 ## bandit3 → bandit4
 
@@ -44,7 +44,7 @@ bandit2 - UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 ```bash
 cat "spaces in this filename"
 ```
-bandit3 - pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+bandit3 - 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 
 ## bandit4 → bandit5
 
@@ -58,7 +58,7 @@ cd inhere
 ```bash
 cat [filename]
 ```
-bandit4 - koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+bandit4 - lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
 ## bandit5 → bandit6
 
@@ -77,7 +77,7 @@ find * -size 1033c
 ```bash
 cat maybehere07/.file2
 ```
-bandit5 - DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+bandit5 - P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
 ## bandit6→ bandit7
 
@@ -89,7 +89,7 @@ bandit5 - DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 ```bash
 find -size 33c -user bandit7 -group bandit6 2>/dev/null
 ```
-bandit6 - HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+bandit6 - z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 
 ## bandit7 → bandit8
 
@@ -98,7 +98,7 @@ bandit6 - HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 ```bash
 cat data.txt | grep millionth
 ```
-bandit7 - cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+bandit7 - TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 
 ## bandit8 → bandit9
 
@@ -117,7 +117,7 @@ cat data.txt | sort
 ```bash
 cat data.txt | sort | uniq -u
 ```
-bandit8 - UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+bandit8 - EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 
 ## bandit9 → bandit10
 
@@ -131,7 +131,7 @@ strings data.txt
 ```bash
 strings data.txt | grep ===
 ```
-bandit9 - truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+bandit9 - G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 
 ## bandit10 → bandit11
 
@@ -145,7 +145,7 @@ cat data.txt
 ```bash
 cat data.txt | base64 -d
 ```
-bandit10 - zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+bandit10 - 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 ## bandit11 → bandit12
 
 **approach** Used cat to read the file
@@ -159,7 +159,7 @@ cat data.txt
 ```bash
 cat data.txt | tr "A-Za-z" "N-ZA-Mn-za-m"
 ```
-bandit11 - 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+bandit11 -  JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
 ## bandit12 → bandit13
 
@@ -183,7 +183,7 @@ gzip -d [filename].gz
 
 bzip2 -d [filename].bz
 ```
-bandit12 - 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+bandit12 - wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
 ## bandit13 → bandit14
 
@@ -201,7 +201,7 @@ ssh -i id_rsa bandit14@bandit.labs.overthewire.org -p 2220
 ```
 [*] Navigated to /etc/bandit_pass and used cat to read the password
 
-bandit14 - 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+bandit14 - fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 
 ## bandit14 → bandit15
 
@@ -210,7 +210,7 @@ bandit14 - 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
 ```bash
 nc localhost 30000
 ```
-bandit15 - BfMYroe26WYalil77FoDi9qh59eK5xNr
+bandit15 - jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 
 ## bandit15 → bandit16
 
@@ -219,4 +219,4 @@ bandit15 - BfMYroe26WYalil77FoDi9qh59eK5xNr
 ```bash
 openssl s_client -connect localhost:30001
 ```
-bandit16 - cluFn7wTiGryunymYOu4RcffSxQluehd
+bandit16 - JQttfApK4SeyHwDlI9SXGR50qclOAil1
