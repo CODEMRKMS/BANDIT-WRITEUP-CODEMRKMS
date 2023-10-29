@@ -291,5 +291,3 @@ ls                                                                    |    nc -l
 **Approach used**
 in one tab u succonect and it in other tab you type lp to listen
 
-# Level 21 → Level 22
-
