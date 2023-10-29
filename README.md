@@ -42,7 +42,7 @@ bandit2 - aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 **approach** ➼ Used cmd command to read file with spaces
 
 ```bash
-cat "spaces in this filename"
+cat "spaces in this filename ending with\ after each space"
 ```
 bandit3 - 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 
